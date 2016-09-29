@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2db81dec-5fca-4cb6-a46f-e3131cf4b60f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://stkend90110.softtek.com/MutualAuthCalculator.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MutualAuthCalculator1.wsdl" MetadataType="Wsdl" ID="d1af6075-d5b6-4844-b8fd-fcf431f815d0" SourceId="1" SourceUrl="https://stkend90110.softtek.com/MutualAuthCalculator.svc?wsdl" />
+    <MetadataFile FileName="MutualAuthCalculator2.xsd" MetadataType="Schema" ID="10bfb7e9-d639-416f-99a6-0066fd2ddd75" SourceId="1" SourceUrl="https://stkend90110.softtek.com/MutualAuthCalculator.svc?xsd=xsd1" />
+    <MetadataFile FileName="MutualAuthCalculator21.xsd" MetadataType="Schema" ID="a27a2b6e-855b-4e1e-9cf5-87ca9162910d" SourceId="1" SourceUrl="https://stkend90110.softtek.com/MutualAuthCalculator.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
