@@ -13,37 +13,13 @@ namespace MutualAuthCalculatorService
     {
         static void Main(string[] args)
         {
-            //ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             ServicePointManager.ServerCertificateValidationCallback =
                 delegate(object sender, X509Certificate cert, X509Chain chain, SslPolicyErrors sslError)
                 {
-                    return true;
-                    //bool validationResult = false;
-
-                    //// Validate the certificate
-                    //var store = new X509Store(StoreName.My, StoreLocation.CurrentUser);     // -> Change CurrentUser to LocalComputer
-                    //store.Open(OpenFlags.ReadOnly);
-
-                    //// Suggest storing the CN value on Octopus variable. For test service this will be:   CN = TEST/GBR_WREMIT. For Prod: GBR_WREMIT
-                    //X509Certificate2Collection serverCertColl = store.Certificates.Find(X509FindType.FindBySubjectName, "GBR_WREMIT", false);
-
-                    //if (serverCertColl.Count > 0)
-                    //{
-                    //    X509Certificate2 serverCert = serverCertColl[0];
-
-                    //    // Make this as rigorous as necessary
-                    //    validationResult = serverCert.Thumbprint == (new X509Certificate2(cert)).Thumbprint;
-                    //}
-                    //else
-                    //{
-                    //    validationResult = false;
-                    //}
-
-                    //store.Close();
-
-                    //return validationResult;
+                    // Ignoring certificate name missmatch with service.
+                    return (sslError == SslPolicyErrors.None || sslError == SslPolicyErrors.RemoteCertificateNameMismatch);
                 };
-            
+
             CallCalculatorOperation();
         }
 
