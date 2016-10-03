@@ -15,6 +15,12 @@ namespace CalculatorService.CalculatorProxy {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="CalculatorProxy.ICalculator")]
     public interface ICalculator {
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/GetVersion", ReplyAction="http://tempuri.org/ICalculator/GetVersionResponse")]
+        string GetVersion();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/GetVersion", ReplyAction="http://tempuri.org/ICalculator/GetVersionResponse")]
+        System.Threading.Tasks.Task<string> GetVersionAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Add", ReplyAction="http://tempuri.org/ICalculator/AddResponse")]
         double Add(double value1, double value2);
         
@@ -65,6 +71,14 @@ namespace CalculatorService.CalculatorProxy {
         
         public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public string GetVersion() {
+            return base.Channel.GetVersion();
+        }
+        
+        public System.Threading.Tasks.Task<string> GetVersionAsync() {
+            return base.Channel.GetVersionAsync();
         }
         
         public double Add(double value1, double value2) {

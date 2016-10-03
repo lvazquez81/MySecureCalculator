@@ -5,7 +5,7 @@ namespace CalculatorService
     {
         public string GetVersion()
         {
-            return "Calculator 1.0";
+            return "Calculator 1.1";
         }
 
         public double Add(double value1, double value2)

@@ -53,13 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\CalculatorProxy\Calculator.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\CalculatorProxy\Calculator1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\CalculatorProxy\CalculatorService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -68,9 +61,13 @@
     <WCFMetadataStorage Include="Service References\CalculatorProxy\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\CalculatorProxy\Calculator.disco" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Service References\CalculatorProxy\Calculator.wsdl" />
+    <None Include="Service References\CalculatorProxy\Calculator2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CalculatorProxy\Calculator21.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\CalculatorProxy\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +78,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CalculatorProxy\Calculator1.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
