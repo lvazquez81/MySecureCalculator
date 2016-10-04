@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost/Calculator.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Calculator2.xsd" MetadataType="Schema" ID="3fa87832-3b50-4d3a-b87f-34ebe36e9a65" SourceId="1" SourceUrl="http://localhost/Calculator.svc?xsd=xsd1" />
-    <MetadataFile FileName="Calculator21.xsd" MetadataType="Schema" ID="e45e34ce-f5ee-416b-9de3-7e3af1fa7f03" SourceId="1" SourceUrl="http://localhost/Calculator.svc?xsd=xsd0" />
-    <MetadataFile FileName="Calculator.wsdl" MetadataType="Wsdl" ID="bd211c3a-24c0-473c-84c2-33dc50c5c7c9" SourceId="1" SourceUrl="http://localhost/Calculator.svc?wsdl" />
-    <MetadataFile FileName="Calculator1.disco" MetadataType="Disco" ID="e077becd-4373-4885-9c80-451055c7dcb0" SourceId="1" SourceUrl="http://localhost/Calculator.svc?disco" />
+    <MetadataFile FileName="Calculator.xsd" MetadataType="Schema" ID="e5f6b7b7-942d-4bdb-9f2a-27a0b1681044" SourceId="1" SourceUrl="http://stkend90110.softtek.com/Calculator.svc?xsd=xsd1" />
+    <MetadataFile FileName="Calculator1.xsd" MetadataType="Schema" ID="97c174bd-b1c5-4dc4-b674-2e8ff20e3e6f" SourceId="1" SourceUrl="http://stkend90110.softtek.com/Calculator.svc?xsd=xsd0" />
+    <MetadataFile FileName="Calculator.disco" MetadataType="Disco" ID="f0c60df1-dc17-4cdc-a670-6a5f0ba3e228" SourceId="1" SourceUrl="http://stkend90110.softtek.com/Calculator.svc?disco" />
+    <MetadataFile FileName="CalculatorService.wsdl" MetadataType="Wsdl" ID="7a63fa5b-b521-48b7-a0e5-def6f52e7d98" SourceId="1" SourceUrl="http://stkend90110.softtek.com/Calculator.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

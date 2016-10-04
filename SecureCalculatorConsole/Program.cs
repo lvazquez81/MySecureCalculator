@@ -7,22 +7,29 @@ namespace SecureCalculatorService
     {
         static void Main(string[] args)
         {
-            CallCalculatorOperation();
-        }
-
-        private static void CallCalculatorOperation()
-        {
             var myService = new CalculatorProxy.CalculatorClient();
 
             try
             {
                 Console.WriteLine("Calculator Service Test\r\n");
 
-                Console.WriteLine("Calling Calculator service...\r\n");
+                double value1 = 1;
+                double value2 = 2;
 
-                double result = myService.Add(1, 1);
+                string calcVersion = myService.GetVersion();
+                Console.WriteLine(string.Format("Version: {0}\r\n", myService.GetVersion()));
 
-                Console.WriteLine(string.Format("Add: 1 + 1 = {0}{1}", result, Environment.NewLine));
+                double resultSum = myService.Add(value1, value2);
+                Console.WriteLine(string.Format("Add:\t\t\t{0} + {1} = {2}\r\n", value1, value2, resultSum));
+
+                //double resultSubs = myService.Substract(value1, value2);
+                //Console.WriteLine(string.Format("Substract:\t\t{0} - {1} = {2}\r\n", value1, value2, resultSubs));
+
+                //double resultMult = myService.Multiply(value1, value2);
+                //Console.WriteLine(string.Format("Multiply:\t\t{0} * {1} = {0}\r\n", value1, value2, resultMult));
+
+                //double resultDiv = myService.Divide(value1, value2);
+                //Console.WriteLine(string.Format("Divide:\t\t\t{0} / {1} = {0}\r\n", value1, value2, resultDiv));
             }
             catch (Exception ex)
             {
@@ -34,42 +41,7 @@ namespace SecureCalculatorService
 
                 while (innerEx != null)
                 {
-                    error.AppendFormat("---> {0}\r\n", innerEx.Message);
-                    innerEx = innerEx.InnerException;
-                }
-
-                Console.WriteLine(error.ToString());
-            }
-            finally
-            {
-                Console.WriteLine("Press any key to end.");
-                Console.ReadKey();
-            }
-        }
-
-        private static void CallGetOperation()
-        {
-            var myService = new CalculatorProxy.CalculatorClient();
-
-            try
-            {
-                Console.WriteLine("Calculator Service Test\r\n");
-
-                string version = myService.GetVersion();
-
-                Console.WriteLine(string.Format("Calculator service: {0}\r\n", version));
-            }
-            catch (Exception ex)
-            {
-                var error = new StringBuilder();
-
-                error.AppendFormat("Error: {0}\r\n", ex.Message);
-
-                Exception innerEx = ex.InnerException;
-
-                while (innerEx != null)
-                {
-                    error.AppendFormat("---> {0}\r\n", innerEx.Message);
+                    error.AppendFormat("--- Error detail: {0}.\r\n", innerEx.Message);
                     innerEx = innerEx.InnerException;
                 }
 

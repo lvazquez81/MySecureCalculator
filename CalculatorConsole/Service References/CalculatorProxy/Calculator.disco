@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
-  <contractRef ref="http://localhost/Calculator.svc?wsdl" docRef="http://localhost/Calculator.svc" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <contractRef ref="http://stkend90110.softtek.com/Calculator.svc?wsdl" docRef="http://stkend90110.softtek.com/Calculator.svc" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
 </discovery>

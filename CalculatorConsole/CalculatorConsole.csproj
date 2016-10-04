@@ -61,13 +61,13 @@
     <WCFMetadataStorage Include="Service References\CalculatorProxy\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\CalculatorProxy\Calculator.wsdl" />
-    <None Include="Service References\CalculatorProxy\Calculator2.xsd">
+    <None Include="Service References\CalculatorProxy\Calculator.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\CalculatorProxy\Calculator21.xsd">
+    <None Include="Service References\CalculatorProxy\Calculator1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\CalculatorProxy\CalculatorService.wsdl" />
     <None Include="Service References\CalculatorProxy\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
@@ -80,7 +80,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\CalculatorProxy\Calculator1.disco" />
+    <None Include="Service References\CalculatorProxy\Calculator.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
