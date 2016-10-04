@@ -6,7 +6,6 @@ namespace MutualAuthCalculatorService
     {
         public MutualAuthCalculator()
         {
-            //ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
         }
         
         public string GetVersion()
